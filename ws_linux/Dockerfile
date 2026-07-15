@@ -26,7 +26,7 @@ RUN apt-get install -y \
     clang-tidy \
     ros-humble-turtlesim \
     ros-humble-rqt*
-
+RUN apt update
 RUN echo "source /opt/ros/humble/setup.bash" >> /home/$USERNAME/.bashrc
 ENV SHELL /bin/bash
 
